@@ -3,4 +3,4 @@ copyterms(Infile,Outfile):-
   copy,seen,see(S),told,tell(T).
 copy:-read(Term),process(Term).
 process(end_of_file).
-process(X):-X\=end_of_file,write(X),write('.'),nl,copy.
+process(X):-X\==end_of_file,write(X),write('.'),nl,copy.

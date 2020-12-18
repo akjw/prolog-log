@@ -4,4 +4,4 @@ combine(First,Second,Outfile):-
 
 copy:-read(Term),process(Term).
 process(X):-X==end.
-process(X):-X\=end,write(X),nl,copy.
+process(X):-X\==end,write(X),nl,copy.
