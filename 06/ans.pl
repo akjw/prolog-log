@@ -1,3 +1,8 @@
+% The goal repeat does not repeat anything; 
+% it merely succeeds whenever it is called. 
+% repeat succeeds (as many times as necessary) on backtracking
+% effect = change the order of evaluating goals from 'right to left' (i.e. backtracking) back to 'left-to-right'.
+
 get_answer(Ans):-write('Enter answer to question'),
 nl,get_answer2(Ans).
 get_answer2(Ans):-

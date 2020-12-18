@@ -38,4 +38,4 @@ write('Input was '),write(Word),nl,loop(Word).
 
 loop:-write('Type end to end'),read(Word),
 write('Input was '),write(Word),nl,
-(Word=end;loop).
+(Word=end;loop). % 'disjunctive goal' (Word=end;loop) succeeds if variable Word is bound to the atom end. If not, the system attempts to satisfy the goal loop recursively.
